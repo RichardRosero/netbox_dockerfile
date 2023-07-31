@@ -8,13 +8,13 @@ git clone -b release https://github.com/netbox-community/netbox-docker.git
 # entra a la carpeta que se creo al descargar el netbox#
 cd netbox-docker
 # crea, copia y pega la siguiente informacion para crear el servicio compose de netbox #
---tee docker-compose.override.yml <<EOF
---version: '3.4'
---services:
---  netbox:
---    ports:
---      - 8000:8080
---EOF
+tee docker-compose.override.yml <<EOF
+version: '3.4'
+services:
+  netbox:
+    ports:
+      - 8000:8080
+EOF
 # ejecuta los comandos siguientes en la consola #
 docker compose pull
 docker compose up
