@@ -32,6 +32,4 @@ docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
 ```
 
 # dirigite despeus de unos minutos al link #
-```
-docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
-```
+
